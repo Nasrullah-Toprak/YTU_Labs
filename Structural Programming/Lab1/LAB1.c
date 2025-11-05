@@ -28,7 +28,6 @@ int main() {
 	int i, j, N, M, flag1=0, flag2=0;
 	int A[2][MAX], B[2][MAX];
 	
-	//Ilk matris giris ve ayni rakam olup olmadigi kontrolu:
 	printf("Ilk matris (2xN) icin N degerini giriniz: ");
 	scanf("%d",&N);
 
@@ -42,8 +41,6 @@ int main() {
 	flag1 = matriskontrolu(A, N);
 	}while(flag1==1);
 
-
-	//Ikinci matris giris ve ayni rakam olup olmadigi kontrolu:
 	printf("Ikinci matris (2xM) icin N degerini giriniz: ");
 	scanf("%d",&M);
 
@@ -56,8 +53,6 @@ int main() {
 	flag2 = matriskontrolu(B, M);
 	}while(flag2==1);
 	
-	
-	//Ilk satirdaki elemanlari karsilastirma ve her iki matrisin toplami: 
 	for (i=0;i<N;i++) {
         for (j=0;j<M;j++) {
             if (*(*(A+0)+i) == *(*(B+0)+j)) {
@@ -68,3 +63,4 @@ int main() {
 	
 	return 0;
 }
+

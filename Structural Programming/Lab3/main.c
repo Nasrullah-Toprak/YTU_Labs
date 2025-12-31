@@ -251,3 +251,6 @@ void freestructs(MEMBER **head) {
 	}
 	*head=NULL;
 }
+
+
+
